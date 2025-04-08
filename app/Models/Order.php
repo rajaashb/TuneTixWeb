@@ -9,6 +9,8 @@ class Order extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['user_id', 'ticket_id', 'quantity', 'total_price'];
+
     // An order belongs to a user
     public function user()
     {

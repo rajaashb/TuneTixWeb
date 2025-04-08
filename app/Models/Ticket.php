@@ -9,6 +9,8 @@ class Ticket extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['concert_id', 'type', 'price', 'quantity'];
+
     // A ticket belongs to a concert
     public function concert()
     {

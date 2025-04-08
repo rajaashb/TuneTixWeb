@@ -39,7 +39,7 @@ class ConcertController extends Controller
         ]);
 
         // Store as separate date and time fields
-        Concert::create([
+        $concert = Concert::create([
             'name' => $validated['name'],
             'venue' => $validated['venue'],
             'date' => $validated['date'],  // Storing the date field separately
